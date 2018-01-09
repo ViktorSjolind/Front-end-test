@@ -81,7 +81,7 @@ aside{
 	background-color: rgba(0,0,0,0.4);
 }
 
-.modal-content{
+.modal-content{	
 	background-color: var(--darkblue);
 	margin: 20% auto;
 	border: 1px solid #888;
@@ -95,3 +95,15 @@ aside{
 	font-weight: bold;
 }
 
+#openModalButton{
+	color: white;
+	background-color: var(--lightblue);
+	border: none;
+	padding: 10px 14px;
+}
+
+#openModalButton:hover{
+	transition-duration: 0.4s;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.5);
+
+}

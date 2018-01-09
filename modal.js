@@ -7,11 +7,15 @@ button.onclick = function(){
 }
 
 closeButton.onclick = function(){
-	modal.style.display = "none";
+	hideModal();
 }
 
 window.onclick = function(event){
 	if(event.target == modal){
-		modal.style.display = "none";
+		hideModal();
 	}
+}
+
+function hideModal(){
+	modal.style.display = "none";
 }
