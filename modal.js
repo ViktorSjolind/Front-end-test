@@ -19,3 +19,8 @@ window.onclick = function(event){
 function hideModal(){
 	modal.style.display = "none";
 }
+
+function testFunction(){
+
+}
+

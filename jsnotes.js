@@ -108,6 +108,9 @@ element.addEventListener("click", function(){ alert("Hello World!"); });
 document.getElementById(id).onclick = function(){code}
 document.getElementById("demo").innerHTML = car;
 document.getElementsByTagName('p')
+document.getElementsByClassName("error-message")[0];
+
+<button type="button" onclick="loadDoc()">Change Content</button>	//call function from html
 
 div1.getAttribute("align")	//returns e.g. right
 document.getElementById("myImage").src = "landscape.jpg";	//attribute
@@ -128,3 +131,11 @@ var x = document.getElementById("frm1");
     for (i = 0; i < x.length ;i++) {
         text += x.elements[i].value + "<br>";
     }
+
+
+
+ function validateDescLength(){
+	if(inputField.validity.tooLong){
+		alert("too long");
+	}
+}
