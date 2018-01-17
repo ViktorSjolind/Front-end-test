@@ -8,6 +8,7 @@ We can also convert any JSON received from the server into JavaScript objects.
 
 */
 
+var ajaxButton = document.getElementById("ajax-button");
 
 var myObj = {name:"John", age:32, city:"New York"};
 var myJSON = JSON.stringify(myObj); // returns myObj with " "
@@ -18,16 +19,32 @@ console.log(JSON.parse(myJSON));
 
 
 var xmlhttp = new XMLHttpRequest();
+
+
+//when the request receives an answer
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var myObj = JSON.parse(this.responseText);
 
+        document.getElementById("json-result").innerHTML += myObj.title;
+
+        /*
         for(x in myObj){
-        	document.getElementById("json-result").innerHTML += myObj[x].id;
+        	document.getElementById("json-result").innerHTML += myObj[3].title;
+        	
+
         }
+        */
         
     }
 };
 
-xmlhttp.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
-xmlhttp.send();
+ajaxButton.onclick = function(){
+	//specifies type of request
+	xmlhttp.open("GET", "https://jsonplaceholder.typicode.com/posts/1", true);
+	//sends the request 
+	xmlhttp.send();
+
+}
+
+
