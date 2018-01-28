@@ -23,8 +23,20 @@
 			<p>text paragraph 2 such<p class="p-test"> hahah</p> complicated wording</p>
 			<br>
 			<button id="ajax-button">Ajax Call</button>
+			<button id="button-geocoding" onclick="requestCoordinates()">Request Coordinates</button>
 			<p id="json-result"></p>
 
+			<div id="map-container">
+				<div id="floating-panel">
+					<input id="address" type="textbox" value="Turku Rautatieasema">
+					<input id="submit" type="button" value="Search">
+				</div>
+
+				<div id="map"></div>
+				<div id="coordinates">
+
+				</div>
+			</div>
 
 
 		</article>
@@ -35,7 +47,15 @@
 			<p>sidebar 1</p>
 			<p>sidebar 2</p>
 			<button id="test-button" onclick="testFunction()">Test</button>
+
+
+
+
+
 		</aside>
+
+	
+
 	</div>
 </div>
 
@@ -52,6 +72,8 @@
 	</div>
 </div>
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3HKHBazSGzWQ5zSFOtTzIU6daRyeTVRc&callback=initMap" async defer></script>
+</script>
 <script src="modal.js"></script>
 <script src="rest.js"></script>
 

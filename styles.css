@@ -113,3 +113,31 @@ aside{
 	display:inline;
 
 }
+
+
+#map-container{
+	margin: 10px;
+	position:relative;
+
+}
+
+#floating-panel {
+  position: absolute;
+  top: 5px;
+  left: 35%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+
+#map {  
+  height: 300px;
+  width: 500px;
+  margin: 0 auto;
+}
